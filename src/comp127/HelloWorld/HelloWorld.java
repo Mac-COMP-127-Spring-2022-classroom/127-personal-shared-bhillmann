@@ -16,8 +16,8 @@ public class HelloWorld {
 
         // print out some diagnostic information
         String javaVersion = System.getProperty("java.version"); // the version of java being used
-        System.out.println("You are using java version: '"+javaVersion+"'");
-        System.out.println("The string shown should start with '12.'");
+        System.out.println("You are using java version: '" + javaVersion + "'");
+        System.out.println("The string shown should start with '16.'");
         System.out.println("If it does not you are likely not using the correct version of java for our class.");
 
     }
