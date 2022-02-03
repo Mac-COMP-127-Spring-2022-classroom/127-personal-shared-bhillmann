@@ -1,4 +1,4 @@
-package comp127;
+package comp127.HelloWorld;
 
 import org.junit.jupiter.api.Test;
 
