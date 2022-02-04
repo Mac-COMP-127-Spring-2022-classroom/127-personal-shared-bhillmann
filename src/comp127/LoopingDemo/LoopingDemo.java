@@ -6,7 +6,6 @@ public class LoopingDemo {
     public static void main(String[] args) {
         List<String> listStringNumbers = List.of("zero", "one", "two", "three");
 
-
         // for each loop
         int acc = 0;
         System.out.println("Start of for each loop");
@@ -20,13 +19,15 @@ public class LoopingDemo {
         System.out.println("Start of C-style loop");
         // for (declare variable; condition to break out of loop; increment loop varible)
         for (int i = 0; i < listStringNumbers.size(); i++) {
-            System.out.println("C-style loop number: " + i + ". " + listStringNumbers.get(i));
+            System.out.println("C-style loop number: " + i + ". " + 
+                listStringNumbers.get(i));
         }
 
         System.out.println("Start of while loop");
         int whileAcc = 0;
         while (whileAcc < listStringNumbers.size()) {
-            System.out.println("While loop number: " + whileAcc + ". " + listStringNumbers.get(whileAcc));
+            System.out.println("While loop number: " + whileAcc
+             + ". " + listStringNumbers.get(whileAcc));
             whileAcc++;
         }
     }
