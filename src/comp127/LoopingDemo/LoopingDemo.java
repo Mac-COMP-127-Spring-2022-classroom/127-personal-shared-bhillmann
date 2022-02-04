@@ -13,9 +13,12 @@ public class LoopingDemo {
         for (String number : listStringNumbers) {
             System.out.println("For each number: " + acc + ". " + number);
             acc++;
+            // acc += 1;
+            // acc = acc + 1;
         }
 
         System.out.println("Start of C-style loop");
+        // for (declare variable; condition to break out of loop; increment loop varible)
         for (int i = 0; i < listStringNumbers.size(); i++) {
             System.out.println("C-style loop number: " + i + ". " + listStringNumbers.get(i));
         }
