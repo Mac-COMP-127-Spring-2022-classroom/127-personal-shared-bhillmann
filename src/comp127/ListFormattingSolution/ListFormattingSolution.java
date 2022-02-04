@@ -1,7 +1,5 @@
 package comp127.ListFormattingSolution;
 
-package listpractice;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -11,7 +9,7 @@ import java.util.List;
  * YOUR TASK: Implement each method and make sure the tests pass.
  */
 @SuppressWarnings({"StringConcatenationInLoop", "WeakerAccess"})
-public class ListFormatting {
+public class ListFormattingSolution {
     /**
      * Returns a new list with each item prefixed with the strings "1. ", "2. ", etc.
      *
