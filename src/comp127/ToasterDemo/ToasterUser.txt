@@ -1,0 +1,23 @@
+package comp127.ToasterDemo;
+
+public class ToasterUser {
+    public static void main(String[] args) {
+        // Toaster toaster <- declaration
+        // new Toaster(); <- initialization
+        // new Toaster(<constructor call and args>);
+        Toaster toaster = new Toaster(); //instantiation
+        // Class <variable name> = new Class(<constructor args>);
+
+        Toaster toasterBlueSixSlots = new Toaster("blue", 6);
+
+        Toastable bagel0 = new Toastable();
+
+        toasterBlueSixSlots.add(bagel0, 5);
+        toasterBlueSixSlots.setToastingLevel("well-done");
+
+        toasterBlueSixSlots.startToasting();
+        // can't access temperature unless if i am a toaster
+        // toasterBLueSixSlots.temperature += 5;
+
+    }
+}

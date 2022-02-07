@@ -1,0 +1,25 @@
+package comp127.ToasterDemo;
+
+public class Toaster {
+    // defining our state 
+    // instance variables
+    private double temperature;
+    private String color;
+    private int numSlots;
+
+    public void add(Toastable toastable, int slotNum) {
+        // add toastable to slot if nothing is there
+    }
+
+    public Toasted startToasting() {
+        // increase temperature
+        // once toasting temperature is reached start timer
+        // pop once timer is done
+    }
+
+    // constructor is a special method
+    Toaster(String color, int numSlots) {
+        this.color = color;
+        this.numSlots = numSlots;
+    }
+}
