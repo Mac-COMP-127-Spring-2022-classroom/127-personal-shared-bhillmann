@@ -5,7 +5,7 @@ public class Car {
     // initially declared as public
     private double speed;
 
-    // behavoir
+    // behavior
     public void pushBrake() {
         this.speed -= 1;
     }
@@ -24,10 +24,11 @@ public class Car {
     //     this.speed = speed;
     // }
 
-    // constructor
+    // constructors
     Car() {
-        this.speed = 0;
+        this(0.0);
     }
+
 
     Car(double speed) {
         this.speed = speed;
