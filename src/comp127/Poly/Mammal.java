@@ -1,6 +1,6 @@
 package comp127.Poly;
 
-public class Mammal extends Animal {
+public class Mammal implements Animal {
     public void makeNoise() {
         System.out.println("Regular Mammal need noise to make!");
     }
