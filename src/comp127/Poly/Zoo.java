@@ -7,7 +7,8 @@ public class Zoo {
         Bird donald = new Duck();
         Bird greyDuck = new Goose();
 
-        // Have them make noise
+        // Have the animals make noise
+        System.out.println("One at a time: ");
         jogi.makeNoise();
         donald.makeNoise();
         greyDuck.makeNoise();
