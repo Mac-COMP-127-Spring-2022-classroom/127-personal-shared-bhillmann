@@ -1,4 +1,4 @@
-package bicyclemodel;
+package comp127.BicycleModel;
 
 public class Bicycle {
     // all of my instance variables are here
