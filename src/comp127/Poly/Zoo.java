@@ -6,18 +6,14 @@ public class Zoo {
     public static void main(String[] args) {
         // Create our animals
         // Animal jogi = new Bear();
-        Duck donald = new Duck();
+        Bird donald = new Duck();
         // Bird greyDuck = new Goose();
-
-        donald.duckOnlyWaddle();
 
         Bird babyDonald = donald.layEgg().hatch();
         babyDonald.makeNoise();
         babyDonald.fly();
-        babyDonald.duckOnlyWaddle();
 
-        Bird babyBabyBabyDonald = babyDonald.layEgg().hatch().layEgg().hatch();
-        babyBabyBabyDonald.fly();
+        babyDonald.walk();
 
         // // Have the animals make noise
         // System.out.println("One at a time: ");

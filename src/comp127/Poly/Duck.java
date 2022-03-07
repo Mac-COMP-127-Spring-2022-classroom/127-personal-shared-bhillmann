@@ -5,7 +5,7 @@ public class Duck extends Bird {
         System.out.println("quack");
     }
 
-    public void duckOnlyWaddle() {
+    public void walk() {
         System.out.println("Waddle like a duck!");
     }
 

@@ -1,10 +1,11 @@
 package comp127.Poly;
 
 public abstract class Bird implements Animal {
-
     public void fly() {
         System.out.println("Weeee I'm flying!");
     }
+
+    public abstract void walk();
     
     public Egg layEgg() {
         return new Egg(this);
