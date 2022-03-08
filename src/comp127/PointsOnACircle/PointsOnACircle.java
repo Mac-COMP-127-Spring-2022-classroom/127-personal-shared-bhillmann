@@ -7,10 +7,9 @@ import edu.macalester.graphics.Point;
 
 public class PointsOnACircle {    
     public static void main(String[] args) {
-        double size = 400.0;
+        int size = 400;
 
-        CanvasWindow canvas = new CanvasWindow("circle", 400, 400);
-
+        CanvasWindow canvas = new CanvasWindow("circle", size, size);
 
         double radius = size * 0.25;
         Ellipse ellipse = new Ellipse(0, 0, radius, radius);
@@ -20,6 +19,7 @@ public class PointsOnACircle {
 
         canvas.add(ellipse);
 
+        // clockwise around the clock
         double angleInRadians = 1.75 * Math.PI;
 
         Point ellipseCenter = ellipse.getCenter();
