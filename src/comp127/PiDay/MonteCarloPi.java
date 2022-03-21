@@ -3,7 +3,7 @@ import java.util.Random;
 
 public class MonteCarloPi {
     // capital D in Double declaration allows us to have the instance variable pi be 'null'
-    private Double pi = null;
+    private double pi;
 
     private static final Random RANDOM = new Random();
 
@@ -19,8 +19,10 @@ public class MonteCarloPi {
         pi = 4 * (totalInCircle / totalIterations);
     }
 
-    public double getPi() {
-        return pi;
+    public Double getPi() {
+        // if (this.pi == null)
+        //     return 0.0;
+        return this.pi;
     }
 
     public Double getTotalIterations() {

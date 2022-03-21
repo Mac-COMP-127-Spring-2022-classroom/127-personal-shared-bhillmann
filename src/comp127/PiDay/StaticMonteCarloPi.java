@@ -21,5 +21,12 @@ public class StaticMonteCarloPi {
 
     public static void main(String[] args) {
         System.out.println(PI);
+        System.out.println(StaticMonteCarloPi.PI);
+        System.out.println(StaticMonteCarloPi.monteCarloEstimatePi(1_000));
+
+        // StaticMonteCarloPi staticPi = new StaticMonteCarloPi();
+        // StaticMonteCarloPi.PI;
+
+        System.out.println(Math.PI);
     }
 }
