@@ -1,6 +1,11 @@
 package comp127.Closures;
 
 public class ClosureDemo {
+    public static void closureArgument(ClosureInterface lambda) {
+        lambda.doublePrint();
+        lambda.doublePrint();
+    }
+
     public static void main(String[] args) {
 
         // 1. Allows us to treat functions as a class
@@ -18,6 +23,6 @@ public class ClosureDemo {
         };
 
         // Call the closure
-        lambda.doublePrint();
+        closureArgument(lambda);
     }
 }
