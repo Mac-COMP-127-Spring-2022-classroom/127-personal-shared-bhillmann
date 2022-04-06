@@ -1,7 +1,9 @@
 package comp127.StreamingDemo;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class StreamingDemo {
     public static void main(String[] args) {
@@ -13,12 +15,16 @@ public class StreamingDemo {
                 results.add(i + 2);
             }
         }
-        System.out.println(results);
+        System.out.println("For loop results: " + results.size());
 
         List<Integer> resultsStream = ints.stream()
             .filter(x -> x % 2 == 0)
-            .map(a -> a + 2)
-            .toList(); // collector
-        System.out.println(resultsStream);
+            // .map(a -> a + 2)
+            .collect(Collectors.toList());
+        System.out.println("Stream results: " + resultsStream.size());
+
+        Long count = ints.stream().filter(x -> x % 2 == 0).count();
+
+        System.out.println("Count of even numbers: " + count);
     }
 }
